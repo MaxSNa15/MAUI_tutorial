@@ -63,6 +63,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="FlyoutPageDemo.xaml.cs">
+	    <DependentUpon>FlyoutPageDemo.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="LayoutPages.xaml.cs">
+	    <DependentUpon>LayoutPages.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="AbsoluteLayoutPage.xaml.cs">
+	    <DependentUpon>AbsoluteLayoutPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="FlexLayoutPage.xaml.cs">
+	    <DependentUpon>FlexLayoutPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="TabbedPageDemo.xaml.cs">
 	    <DependentUpon>TabbedPageDemo.xaml</DependentUpon>
 	  </Compile>
@@ -72,7 +84,19 @@
 	  <MauiXaml Update="ContentPageDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="LayoutDemo.xaml">
+	  <MauiXaml Update="FlyoutPageDemo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="GridLayout.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="LayoutPages.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AbsoluteLayoutPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="FlexLayoutPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="TabbedPageDemo.xaml">

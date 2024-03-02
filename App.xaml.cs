@@ -11,7 +11,7 @@
             navPage.BarBackgroundColor = Colors.LemonChiffon;
             navPage.BarTextColor = Colors.Black;
 
-            MainPage = new NewPage1();
+            MainPage = new FlexLayoutPage();
         }
     }
 }
