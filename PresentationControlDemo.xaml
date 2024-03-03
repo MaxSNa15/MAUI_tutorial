@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2_Controles.PresentationControlDemo"
+             Title="PresentationControlDemo">
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <BoxView 
+            BackgroundColor="Black"
+            HeightRequest="200"
+            />
+
+            <Label 
+            Text="Label"
+            FontSize="20"
+            TextColor="Red"
+            />
+
+            <Button
+            Text="Button"
+            BackgroundColor="Green"
+            TextColor="White"
+            />
+
+            <Ellipse
+            WidthRequest="100"
+            HeightRequest="100"
+            BackgroundColor="Blue"
+            Fill="red"
+            Stroke="DarkCyan"
+            StrokeThickness="50"
+            />
+
+            <Line
+            X1="0"
+            Y1="0"
+            X2="100"
+            Y2="100"
+            Stroke="Black"
+            StrokeThickness="5"
+            />
+
+            <Rectangle
+            WidthRequest="100"
+            HeightRequest="100"
+            BackgroundColor="Yellow"
+            />
+
+            <Polygon
+            Points="10,70 100,60 100,100 40,100"
+            BackgroundColor="Purple"
+            Stroke="Black"
+            StrokeThickness="5"
+            />
+
+            <Polyline
+            Points="10,70 100,60 100,100 40,100"
+            Stroke="Black"
+            StrokeThickness="5"
+            />
+
+            <Path
+                Data="M 0 0 L 100 100"
+                Stroke="Black"
+                StrokeThickness="5"
+                />
+
+            <Border
+                Stroke="Yellow"
+                StrokeThickness="5"
+                Padding="10"
+                >
+                <Label
+                    Text="Label dentro de Border"
+                    FontSize="20"
+                    TextColor="Red"
+                    />
+            </Border>
+
+            <Image
+                Source="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                Aspect="AspectFit"
+                WidthRequest="100"
+                HeightRequest="100"
+                />
+
+            <Frame
+                Margin="5"
+                Padding="10"
+                CornerRadius="10"
+                BackgroundColor="LightGray"
+                BorderColor="Black"
+                >
+                <Label
+                    Text="Label dentro de Frame"
+                    FontSize="20"
+                    TextColor="Red"
+                    />
+            </Frame>
+
+            <WebView
+                Source="https://www.google.com"
+                HeightRequest="200"
+                />
+
+            
+            <!-- CONTROLES CON COMANDOS -->
+            <Button
+                x:Name="btnTest"
+                Text="Button con comando"
+                BackgroundColor="Green"
+                TextColor="White"
+                Clicked="btnTest_Clicked"
+                />
+
+            <ImageButton
+                Source="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                Clicked="btnTest_Clicked"
+                />
+
+            <RadioButton
+                CheckedChanged="RadioButton_CheckedChanged"
+                Content="Option 1"
+                GroupName="gp1"
+                />
+
+            <RadioButton
+                CheckedChanged="RadioButton_CheckedChanged"
+                Content="Option 2"
+                GroupName="gp1"
+                />
+
+            <SearchBar
+                x:Name="searchControl"
+                SearchButtonPressed="searchControl_SearchButtonPressed"
+                Placeholder="Buscar"
+                />
+
+            <SwipeView>
+                <SwipeView.LeftItems>
+                    <SwipeItems>
+                        <SwipeItem
+                            BackgroundColor="Aqua"
+                            Text="Left Swipe"
+                            Invoked="SwipeItem_Invoked"
+                            />
+                        <SwipeItem
+                            BackgroundColor="Aqua"
+                            Text="Left Swipe 2"
+                            Invoked="SwipeItem_Invoked"
+                            />
+                    </SwipeItems>
+                </SwipeView.LeftItems>
+
+                <Grid 
+                    BackgroundColor="LightGray"
+                    HeightRequest="100"
+                    >
+                    <Label
+                        Text="SwipeView"
+                        FontSize="20"
+                        TextColor="Red"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        />
+                </Grid>
+                
+                
+            </SwipeView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>
